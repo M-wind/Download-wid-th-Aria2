@@ -32,8 +32,12 @@ const Confirm = () => {
   )
 
   const getCookie = async (url: string, storeId: string) => {
-    const cookies = await chrome.cookies.getAll({ url, storeId })
-    console.log(cookies)
+    let cookies: chrome.cookies.Cookie[] = []
+    try {
+      cookies = await chrome.cookies.getAll({ url, storeId })
+    } catch (error) {
+      cookies = []
+    }
     return cookies.reduce((pre, cur) => {
       pre += cur.name + ':' + cur.value + ';'
       return pre
@@ -42,7 +46,6 @@ const Confirm = () => {
 
   const handleClick = async (item: ServerInfo) => {
     const cookie = await getCookie(info.referrer, info.storeId)
-    console.log(cookie)
     aria2Add(item.url, {
       url: info.url,
       name: finalName(),
