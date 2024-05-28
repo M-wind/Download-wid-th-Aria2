@@ -1,0 +1,27 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "vite -c vite.popup.config.ts",
+    "build": "vite build -c vite.popup.config.ts && vite build -c vite.confirm.config.ts && vite build -c vite.background.config.ts && node build.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@formkit/auto-animate": "^0.8.2",
+    "@types/chrome": "^0.0.268",
+    "@types/node": "^20.12.12",
+    "autoprefixer": "^10.4.19",
+    "overlayscrollbars": "^2.8.3",
+    "overlayscrollbars-solid": "^0.5.5",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "solid-devtools": "^0.29.2",
+    "solid-js": "^1.8.11",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.0.11",
+    "vite-plugin-solid": "^2.8.2"
+  }
+}

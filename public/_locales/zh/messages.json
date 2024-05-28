@@ -1,0 +1,26 @@
+{
+  "server": {
+    "message": "服务器"
+  },
+  "title": {
+    "message": "标题"
+  },
+  "protocal": {
+    "message": "协议"
+  },
+  "host": {
+    "message": "主机"
+  },
+  "port": {
+    "message": "端口"
+  },
+  "path": {
+    "message": "路径"
+  },
+  "token": {
+    "message": "令牌"
+  },
+  "description": {
+    "message": "拦截下载, 发送给Aria2."
+  }
+}

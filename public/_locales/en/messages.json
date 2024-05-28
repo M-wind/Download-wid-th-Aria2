@@ -1,0 +1,26 @@
+{
+  "server": {
+    "message": "Server"
+  },
+  "title": {
+    "message": "Title"
+  },
+  "protocal": {
+    "message": "Protocal"
+  },
+  "host": {
+    "message": "Host"
+  },
+  "port": {
+    "message": "Port"
+  },
+  "path": {
+    "message": "Path"
+  },
+  "token": {
+    "message": "Token"
+  },
+  "description": {
+    "message": "Send Url To Aria2."
+  }
+}
