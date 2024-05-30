@@ -38,8 +38,8 @@ const Confirm = () => {
     } catch (error) {
       cookies = []
     }
-    return cookies.reduce((pre, cur) => {
-      pre += cur.name + ':' + cur.value + ';'
+    return cookies.reduce((pre, cur, index) => {
+      pre += cur.name + '=' + cur.value + (index === cookies.length - 1 ? '' : ';')
       return pre
     }, '')
   }

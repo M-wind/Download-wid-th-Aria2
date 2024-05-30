@@ -1,6 +1,6 @@
 {
   "name": "Download with Aria2",
-  "version": "1.0",
+  "version": "1.0.2",
   "manifest_version": 3,
   "permissions": ["downloads", "storage", "cookies"],
   "action": {
