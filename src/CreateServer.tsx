@@ -46,7 +46,7 @@ const CreateServer = (props: { onBack: (flag: boolean) => void }) => {
       return
     }
     if (serverInfo.invalid.title || serverInfo.invalid.host || serverInfo.invalid.port) return
-    const serverInfos: ServerInfos = await getStorage()
+    const serverInfos: ServerInfos = (await getStorage()) || []
     const contains = serverInfos.some(v => v.title === serverInfo.title)
     if (contains) {
       batch(() => {
